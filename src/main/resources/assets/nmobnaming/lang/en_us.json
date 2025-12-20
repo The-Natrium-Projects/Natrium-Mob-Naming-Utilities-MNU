@@ -1,0 +1,11 @@
+{
+	"item.nmobnaming.boss_bar_hiding_tag": "Boss Bar Hiding Tag",
+	"item.nmobnaming.boss_bar_showing_tag": "Boss Bar Showing Tag",
+	"item.nmobnaming.name_remover": "Name Remover",
+	
+	"info.nmobnaming.no_boss_bar": "This mob doesn't have a boss bar.",
+	"info.nmobnaming.boss_bar_already_disabled": "This mob's boss bar is already hidden.",
+	"info.nmobnaming.boss_bar_disabled": "Boss bar hidden.",
+	"info.nmobnaming.boss_bar_already_enabled": "This mob's boss bar is already shown.",
+	"info.nmobnaming.boss_bar_enabled": "Boss bar shown."
+}

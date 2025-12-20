@@ -1,0 +1,11 @@
+{
+	"item.nmobnaming.boss_bar_hiding_tag": "Boss生命条隐藏标牌",
+	"item.nmobnaming.boss_bar_showing_tag": "Boss生命条显示标牌",
+	"item.nmobnaming.name_remover": "命名移除标牌",
+	
+	"info.nmobnaming.no_boss_bar": "这个生物没有Boss生命条。",
+	"info.nmobnaming.boss_bar_already_disabled": "这个生物的Boss生命条已经隐藏。",
+	"info.nmobnaming.boss_bar_disabled": "隐藏了Boss生命条。",
+	"info.nmobnaming.boss_bar_already_enabled": "这个生物的Boss生命条已经显示。",
+	"info.nmobnaming.boss_bar_enabled": "显示了Boss生命条。"
+}

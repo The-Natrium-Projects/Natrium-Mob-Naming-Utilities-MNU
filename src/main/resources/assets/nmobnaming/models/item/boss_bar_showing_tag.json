@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "nmobnaming:item/boss_bar_showing_tag"
+	}
+}

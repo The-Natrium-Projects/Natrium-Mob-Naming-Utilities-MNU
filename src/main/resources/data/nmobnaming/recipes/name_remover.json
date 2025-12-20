@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":[
+    {
+      "item": "minecraft:name_tag"
+    },
+    {
+      "item": "minecraft:fermented_spider_eye"
+    }
+  ],
+
+  "result":{
+    "item": "nmobnaming:name_remover",
+    "count": 1
+  }
+}

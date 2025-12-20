@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":[
+    {
+      "item": "minecraft:name_tag"
+    },
+    {
+      "item": "minecraft:wither_rose"
+    }
+  ],
+
+  "result":{
+    "item": "nmobnaming:boss_bar_hiding_tag",
+    "count": 1
+  }
+}
