@@ -20,7 +20,7 @@ plugins {
 }
 
 version = filename_version
-group = "net.sodiumzh.nmobnaming"
+group = "net.sodiumzh.natriumnaming"
 
 base {
     archivesName = archive_base_name
@@ -31,8 +31,8 @@ javadoc {
 }
 
 mixin {
-    add sourceSets.main, "nmobnaming.refmap.json"
-    config 'nmobnaming.mixins.json'
+    add sourceSets.main, "natriumnaming.refmap.json"
+    config 'natriumnaming.mixins.json'
 }
 
 jarJar.enable()
@@ -192,6 +192,8 @@ dependencies {
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")*/
     implementation fg.deobf("blank:nfulib-${minecraft_version}:${nfu_version}")
+    implementation fg.deobf("curse.maven:twilightforest-227639:4755494")
+
 
     //implementation fg.deobf("curse.maven:bettercombat-639842:5625757")
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
