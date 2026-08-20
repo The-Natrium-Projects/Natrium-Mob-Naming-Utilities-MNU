@@ -1,6 +1,7 @@
 package net.sodiumzh.naming.eventlisteners;
 
 import net.minecraft.server.level.ServerBossEvent;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingTickEvent;
@@ -25,13 +26,24 @@ public class EntityEventListeners
 		if (!(event.getEntity() instanceof Mob))
 			return;
 		Mob mob = (Mob)(event.getEntity());
-		BossInfoReferences.recordBossEventAccessor(mob);
+		try {
+			BossInfoReferences.recordBossEventAccessor(mob);
+		} catch (RuntimeException ex) {
+			ex.printStackTrace();
+			BossInfoReferences.labelNoBossEvent((EntityType<? extends Mob>) mob.getType());
+		}
 		
 		// Find the boss bar, and update references on both BossEvent instance and the mob
 		@Nullable ServerBossEvent serverBossEvent = BossInfoReferences.getLinkedBossEvent(mob).orElse(null);
 		if (serverBossEvent instanceof IBossEventMobAccessor accessor) {
-			accessor.setLinkedMob(mob);
-			BossEventStatics.setLinkedBossEvent(mob, serverBossEvent);
+			try {
+				accessor.setLinkedMob(mob);
+				BossEventStatics.setLinkedBossEvent(mob, serverBossEvent);
+			} catch (RuntimeException ex) {
+				ex.printStackTrace();
+				accessor.setLinkedMob(null);
+				BossEventStatics.setLinkedBossEvent(mob, null);
+			}
 		}
 	}
 	

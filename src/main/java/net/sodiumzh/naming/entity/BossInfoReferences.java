@@ -80,6 +80,10 @@ public class BossInfoReferences
 		})), () -> ACCESSORS.put((EntityType<? extends Mob>) mob.getType(), Optional.empty()));
 	}
 
+	public static void labelNoBossEvent(EntityType<? extends Mob> type) {
+		ACCESSORS.put(type, Optional.empty());
+	}
+
 	public static Optional<ServerBossEvent> getLinkedBossEvent(Mob mob) {
 		try {
 			return Optional.ofNullable(ACCESSORS.get(mob.getType())).orElse(Optional.empty())
