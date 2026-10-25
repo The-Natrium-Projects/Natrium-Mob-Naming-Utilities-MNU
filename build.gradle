@@ -267,8 +267,8 @@ reobf {
 tasks.build.dependsOn tasks.jarJar
 jar.finalizedBy('reobfJarJar')
 mixin {
-    add sourceSets.main, "natriumnaming.refmap.json"
-    config 'natriumnaming.mixins.json'
+    add sourceSets.main, "natriummobdisplay.refmap.json"
+    config 'natriummobdisplay.mixins.json'
 }
 // Example configuration to allow publishing using the maven-publish plugin
 publishing {

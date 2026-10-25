@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":[
+    {
+      "item": "natriummobdisplay:boss_bar_hiding_tag"
+    },
+    {
+      "item": "minecraft:fermented_spider_eye"
+    }
+  ],
+
+    "result":{
+    "item": "natriummobdisplay:boss_bar_showing_tag",
+    "count": 1
+  }
+}

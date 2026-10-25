@@ -1,6 +1,0 @@
-{
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "natriumnaming:item/boss_bar_showing_tag"
-	}
-}
